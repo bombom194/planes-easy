@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Easy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #plan-form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #plans {
+            list-style-type: none;
+            padding: 0;
+        }
+        .plan-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .plan-item button {
+            background-color: #f44336;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .plan-item button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planes Easy</h1>
+    <div id="plan-form">
+        <input type="text" id="plan-input" placeholder="Escribe tu plan aquí">
+        <button onclick="addPlan()">Añadir Plan</button>
+    </div>
+    <ul id="plans"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
